@@ -1,6 +1,6 @@
 # phone-catalog-app
 
-In the project directory, you can run:
+In the project directory(phone-catalog-api), you can run:
 
 npm run dev
 Runs the app in the development mode.
