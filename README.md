@@ -1,7 +1,9 @@
 # phone-catalog-app
 
-In the project directory(phone-catalog-api), you can run:
+for phone-catalog-api
+In the project directory, you can run:
 
-npm run dev
+npx json-server -p 8000 -w data/db.json
+
 Runs the app in the development mode.
 Open http://localhost:8000/phones to view it in your browser.
