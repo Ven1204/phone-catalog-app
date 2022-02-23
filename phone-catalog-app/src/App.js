@@ -18,7 +18,7 @@ function App() {
         <div className='container'>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/phones" element={<PhoneDetails />} />
+            <Route path="/phones/:id" element={<PhoneDetails />} />
             <Route element={<PageNotFound />} />
           </Routes>
         </div>
