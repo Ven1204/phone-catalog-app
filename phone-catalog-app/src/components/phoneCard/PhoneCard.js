@@ -39,8 +39,9 @@ const PhoneCard = (props) => {
 
       {phones.map(phone =>
         <div className='card-inner' key={phone.id}>
+          <Link to={`/phones/${phone.id}`} >
             <div className='card-top' >
-              <Link to={'/phones'} />
+
               <img src={phone.image_url} alt={phone.model} />
             </div>
 
@@ -50,6 +51,7 @@ const PhoneCard = (props) => {
                 <p>{phone.model}</p>
               </div>
             </div>
+          </Link>
         </div>
       )}
       </div>
