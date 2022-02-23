@@ -1,0 +1,29 @@
+.card-main {
+  background-color: aquamarine;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 8px 2px #00ffff6b;
+}
+
+.card-bot {
+  background-color: white;
+  padding: 16px 400px;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  span{
+    font-weight: 600;
+  }
+}
+
+.card-img{
+  text-align: center;
+}
+
+.card-info{
+
+}
+
+.card-items {
+  align-items: center;
+}

@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import PhoneApi from '../../common/apis/PhoneApi';
+import './PhoneDetails.scss';
 
 
 const PhoneDetails = () => {
@@ -30,23 +31,23 @@ const PhoneDetails = () => {
 
   return (
 
-      <div className='card-item' >
+      <div className='card-items' >
 
-      {phones.id.map(phone =>
+      {phones.map(phone =>
         <div className='card-main' key={phone.id}>
           <div className='card-img' >
             <img src={phone.image_url} alt={phone.model} />
           </div>
           <div className='card-bot'>
             <div className='card-details'>
-              <h4 >{phone.brand}</h4>
-              <p>{phone.model}</p>
-              <p>{phone.color}</p>
-              <p>{phone.battery}</p>
-              <p>{phone.weight}</p>
-              <p>{phone.memory}</p>
-              <p>{phone.cpu}</p>
-              <p>{phone.os}</p>
+              <h4> {phone.brand}</h4>
+              <p><span>Model:</span> {phone.model}</p>
+              <p><span>Color:</span> {phone.color}</p>
+              <p><span>Battery Capacity:</span> {phone.battery}</p>
+              <p><span>Weight:</span> {phone.weight}</p>
+              <p><span>Memory:</span> {phone.memory}</p>
+              <p><span>CPU:</span> {phone.cpu}</p>
+              <p><span>OS:</span> {phone.os}</p>
             </div>
           </div>
         </div>
