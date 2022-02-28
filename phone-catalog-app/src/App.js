@@ -13,13 +13,16 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
+      {/* you need to wrap your Routes and Route to this Router tag for it to work */}
       <Router>
         <Header></Header>
         <div className='container'>
+          {/* Switch is replaced by Routes */}
           <Routes>
+            {/* route: self closing tag with params of the path === url path '/' is home, element === component you want to render when the path is chosen */}
             <Route path="/" element={<Home />} />
             <Route path="/phones/:id" element={<PhoneDetails />} />
-            <Route element={<PageNotFound />} />
+            <Route path="/*" element={<PageNotFound />} />
           </Routes>
         </div>
         <Footer />
