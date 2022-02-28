@@ -1,7 +1,6 @@
 # phone-catalog-app
 
-for phone-catalog-api
-In the project directory, you can run:
+In the project directory (phone-catalog-app), you can run:
 
 npx json-server -p 8000 -w data/db.json
 
