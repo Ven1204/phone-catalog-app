@@ -41,8 +41,7 @@ const PhoneCard = (props) => {
             to get the data */}
       {phones.map(phone =>
         <div className='card-inner' key={phone.id}>
-          {/* enable the div to be a link to render the PhoneDetails component
-              through the path = /phones/:id set on app.js */}
+
           <Link to={`/phones/${phone.id}`} >
             <div className='card-top' >
               <img src={phone.image_url} alt={phone.model} />
